@@ -206,7 +206,128 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+/* Product Section Style */
 
+#products h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 60px;
+}
+.grid-product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+.grid-product-item {
+    padding: 20px;
+    box-shadow: 5px 0 10px 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.grid-product-item img {
+    width: 100%;
+}
+.grid-product-item:hover img {
+    opacity: 0.7;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #000;
+    margin: 15px 0 10px 0;
+}
+.product-price {
+    color: #000;
+}
+
+.rating {
+    margin: 10px 0;
+    color: #FB8200;
+}
+.grid-product-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.see-more a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #E02C6D;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.arrow-icons {
+    margin-bottom: -3px;
+}
+
+/* Feature Section Style */
+#feature {
+    margin-top: 80px;
+}
+.feature-container {
+    display: flex;
+    align-items: center;
+}
+.feature-content-box {
+    width: 80%;
+    margin-left: 100px;
+
+}
+.feature-content-box h2 {
+    color: #000;
+    margin: 20px 0;
+}
+
+.btn-join {
+    border-radius: 0;
+    margin: 15px 0;
+}
+
+/* Footer Section Style */
+
+footer {
+    background-color: #0A0826;
+    margin-top: 90px;
+    padding: 60px 0;
+    text-align: center;
+    color: #D9DBE1;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+}
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 15px;
+
+}
+
+.social-media ul li:last-child a {
+    margin-right: 0;
+}
+
+.social-media ul li:hover a {
+    color: #E02C6D;
+}
 @media screen and (max-width: 576px) {
 
     .row {
@@ -244,5 +365,12 @@ h1 {
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .grid-product-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    
+    
     }
 }
