@@ -200,6 +200,12 @@ h1 {
 
 }
 
+/* Partner Section Style */
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 @media screen and (max-width: 576px) {
 
